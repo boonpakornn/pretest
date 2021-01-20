@@ -1,0 +1,12 @@
+<div>
+  <span>Filter: </span><input type="text" [(ngModel)]="searchText" (ngModelChange)="onChange()"><br>
+  <hr>
+  <div>
+    <!-- {{this.arrayValue}} -->
+    <table style="width:100%">
+      <tr *ngFor = "let cat of arrayValue">
+        <th>{{cat}}</th>
+      </tr>
+    </table>
+  </div>
+</div>
