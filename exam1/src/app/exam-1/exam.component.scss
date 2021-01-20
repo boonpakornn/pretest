@@ -1,0 +1,24 @@
+table, th {
+    height: 100%;
+    border: 1px solid black;
+    width:100%;
+    vertical-align: top;
+}
+
+div {
+    height: 100vh;
+}
+
+table.fixed { table-layout:fixed; }
+
+#col1 {
+    width: 200px;
+}
+
+#col2 {
+    min-width: 0px;
+    overflow-x: scroll;
+}
+#col3 {
+    width: 300px;
+}

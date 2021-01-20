@@ -1,0 +1,19 @@
+<div>
+    <table class="fixed">
+      <tr>
+        <th id="col1">
+          <input type="number" [value]="selectedValue" [(ngModel)]="selectedValue" (ngModelChange)="onChange()"><br><br>
+        </th>
+        <th id="col2">
+          <select [(ngModel)]="selectedOption" (ngModelChange)="onChange()">
+            <option *ngFor="let option of options" [value]="option.value">
+              {{option.name}}
+           </option>
+          </select>
+        </th> 
+        <th id="col3">
+          {{result}}
+        </th>
+      </tr>
+    </table>
+  </div>
